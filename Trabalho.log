@@ -1,0 +1,58 @@
+Circuit: * TRABALHO 1
+
+Vind: Removing PWL point (2.1e-008,0)
+Vind: Removing PWL point (2.8e-008,0)
+Vind: Removing PWL point (4.2e-008,0)
+Vind: Removing PWL point (6.3e-008,0)
+Vinc: Removing PWL point (3e-009,0)
+Vinc: Removing PWL point (4.5e-008,0)
+Vinc: Removing PWL point (4.8e-008,0)
+Vinc: Removing PWL point (5.1e-008,0)
+Vinc: Removing PWL point (5.4e-008,0)
+Vinc: Removing PWL point (5.7e-008,0)
+Vinc: Removing PWL point (6e-008,0)
+Vinb: Removing PWL point (3e-009,0)
+Vinb: Removing PWL point (1.5e-008,1)
+Vinb: Removing PWL point (2.4e-008,0)
+Vinb: Removing PWL point (2.7e-008,0)
+Vinb: Removing PWL point (3e-008,0)
+Vinb: Removing PWL point (3.3e-008,0)
+Vinb: Removing PWL point (3.6e-008,0)
+Vinb: Removing PWL point (3.9e-008,0)
+Vinb: Removing PWL point (4.2e-008,0)
+Vina: Removing PWL point (3e-009,0)
+Vina: Removing PWL point (6e-009,0)
+Vina: Removing PWL point (9e-009,0)
+Vina: Removing PWL point (1.2e-008,0)
+Vina: Removing PWL point (1.5e-008,0)
+Vina: Removing PWL point (1.8e-008,0)
+Vina: Removing PWL point (2.1e-008,0)
+Vina: Removing PWL point (4.5e-008,0)
+WARNING: Node OUT is floating.
+
+WARNING: Less than two connections to node VDD2.  This node is used by V2.
+Direct Newton iteration for .op point succeeded.
+
+
+Measurement "atraso_a000lh" FAIL'ed
+transicao_a000hl=6.4e-008 FROM 2.00005e-009 TO 6.6e-008
+
+
+Date: Fri Jul 28 16:54:27 2023
+Total elapsed time: 1.204 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7841
+traniter = 7801
+tranpoints = 2364
+accept = 2305
+rejected = 59
+matrix size = 237
+fillins = 24
+solver = Normal
+Thread vector: 137.0/102.8[4] 29.1/18.1[4] 12.6/7.4[4] 3.0/6.0[1]  2592/500
+Matrix Compiler1: 34.44 KB object code size  19.1/9.5/[6.4]
+Matrix Compiler2: 30.32 KB object code size  8.6/10.3/[3.3]
+

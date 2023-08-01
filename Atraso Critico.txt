@@ -1,0 +1,7 @@
+NMOS - 1
+PMOS - 0
+Caminho critico: 
+1 - Ver maior custo de transistores
+2 - Pegar o maior measure de transicao
+3 - Ver os transistores ativos nesse arco do measure
+4 - Ir debugando a rede pelo valor de ativação do PMOS/NMOS
