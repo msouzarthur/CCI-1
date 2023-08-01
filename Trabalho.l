@@ -225,28 +225,192 @@ xFO4 out_f3 out VDD GND FO4
 C1 out 0 1ff
 
 * SIMULACAO
-** 22 ARCOS DE 3ns
-.tran 1p 66ns
+** 22 ARCOS DE 3ns + 1ns pra evitar conflitos
+.tran 1p 67ns
 
 * MEDIDAS
 ** ATRASOS
-*A000 - OK
-*A001 - OK
-*A010 - OK
-*A011 - OK
-*A100 - OK
-*A101 - OK
-*A110 - OK
+***A000
 .measure tran atraso_A000LH
-+ trig v(A) val={vcc}/2 td=1ns rise=1
-+ targ v(out) val={vcc}/2 td=1ns rise=1
++ trig v(A)      val={vcc}/2 td=1ns rise=1
++ targ v(out_f3) val={vcc}/2 td=1ns fall=1
+.measure tran atraso_A000HL
++ trig v(A)      val={vcc}/2 td=0ns fall=1
++ targ v(out_f3) val={vcc}/2 td=0ns rise=1
 
-.measure tran transicao_A000HL
-+ trig v(A)   val={vcc}*0.5 td=2ns fall=1
-*+ targ v(out) val={vcc}*0.5 td=2ns rise=1
+***A001
+.measure tran atraso_A001LH
++ trig v(A)      val={vcc}/2 td=3ns rise=1
++ targ v(out_f3) val={vcc}/2 td=3ns fall=1
+.measure tran atraso_A001HL
++ trig v(A)      val={vcc}/2 td=3ns fall=1
++ targ v(out_f3) val={vcc}/2 td=3ns rise=1
+
+***A010
+.measure tran atraso_A010LH
++ trig v(A)      val={vcc}/2 td=7ns rise=1
++ targ v(out_f3) val={vcc}/2 td=7ns rise=1
+.measure tran atraso_A010HL
++ trig v(A)      val={vcc}/2 td=7ns fall=1
++ targ v(out_f3) val={vcc}/2 td=7ns fall=1
+
+***A011
+.measure tran atraso_A011LH
++ trig v(A)      val={vcc}/2 td=10ns rise=1
++ targ v(out_f3) val={vcc}/2 td=10ns rise=1
+.measure tran atraso_A011HL
++ trig v(A)      val={vcc}/2 td=10ns fall=1
++ targ v(out_f3) val={vcc}/2 td=10ns fall=1
+
+***A100
+.measure tran atraso_A100LH
++ trig v(A)      val={vcc}/2 td=13ns rise=1
++ targ v(out_f3) val={vcc}/2 td=13ns rise=1
+.measure tran atraso_A100HL
++ trig v(A)      val={vcc}/2 td=13ns fall=1
++ targ v(out_f3) val={vcc}/2 td=13ns fall=1
+
+***A101
+.measure tran atraso_A101LH
++ trig v(A)      val={vcc}/2 td=16ns rise=1
++ targ v(out_f3) val={vcc}/2 td=16ns rise=1
+.measure tran atraso_A101HL
++ trig v(A)      val={vcc}/2 td=16ns fall=1
++ targ v(out_f3) val={vcc}/2 td=16ns fall=1
+
+***A110
+.measure tran atraso_A110LH
++ trig v(A)      val={vcc}/2 td=19ns rise=1
++ targ v(out_f3) val={vcc}/2 td=19ns fall=1
+.measure tran atraso_A110HL
++ trig v(A)      val={vcc}/2 td=19ns fall=1
++ targ v(out_f3) val={vcc}/2 td=19ns rise=1
+
+***0B00
+.measure tran atraso_0B00LH
++ trig v(B)      val={vcc}/2 td=22ns rise=1
++ targ v(out_f3) val={vcc}/2 td=22ns fall=1
+.measure tran atraso_0B00HL
++ trig v(B)      val={vcc}/2 td=22ns fall=1
++ targ v(out_f3) val={vcc}/2 td=22ns rise=1
+
+***0B01
+.measure tran atraso_0B01LH
++ trig v(B)      val={vcc}/2 td=25ns rise=1
++ targ v(out_f3) val={vcc}/2 td=25ns fall=1
+.measure tran atraso_0B01HL
++ trig v(B)      val={vcc}/2 td=25ns fall=1
++ targ v(out_f3) val={vcc}/2 td=25ns rise=1
+
+***0B10
+.measure tran atraso_0B10LH
++ trig v(B)      val={vcc}/2 td=28ns rise=1
++ targ v(out_f3) val={vcc}/2 td=28ns rise=1
+.measure tran atraso_0B10HL
++ trig v(B)      val={vcc}/2 td=28ns fall=1
++ targ v(out_f3) val={vcc}/2 td=28ns fall=1
+
+***0B11
+.measure tran atraso_0B11LH
++ trig v(B)      val={vcc}/2 td=31ns rise=1
++ targ v(out_f3) val={vcc}/2 td=31ns rise=1
+.measure tran atraso_0B11HL
++ trig v(B)      val={vcc}/2 td=31ns fall=1
++ targ v(out_f3) val={vcc}/2 td=31ns fall=1
+
+***1B00
+.measure tran atraso_1B00LH
++ trig v(B)      val={vcc}/2 td=34ns rise=1
++ targ v(out_f3) val={vcc}/2 td=34ns rise=1
+.measure tran atraso_1B00HL
++ trig v(B)      val={vcc}/2 td=34ns fall=1
++ targ v(out_f3) val={vcc}/2 td=34ns fall=1
+
+***1B01
+.measure tran atraso_1B01LH
++ trig v(B)      val={vcc}/2 td=37ns rise=1
++ targ v(out_f3) val={vcc}/2 td=37ns rise=1
+.measure tran atraso_1B01HL
++ trig v(B)      val={vcc}/2 td=37ns fall=1
++ targ v(out_f3) val={vcc}/2 td=37ns fall=1
+
+***1B10
+.measure tran atraso_1B10LH
++ trig v(B)      val={vcc}/2 td=40ns rise=1
++ targ v(out_f3) val={vcc}/2 td=40ns fall=1
+.measure tran atraso_1B10HL
++ trig v(B)      val={vcc}/2 td=40ns fall=1
++ targ v(out_f3) val={vcc}/2 td=40ns rise=1
+
+***00C0
+.measure tran atraso_00C0LH
++ trig v(C)      val={vcc}/2 td=43ns rise=1
++ targ v(out_f3) val={vcc}/2 td=43ns fall=1
+.measure tran atraso_00C0HL
++ trig v(C)      val={vcc}/2 td=43ns fall=1
++ targ v(out_f3) val={vcc}/2 td=43ns rise=1
+
+***00C1
+.measure tran atraso_00C1LH
++ trig v(C)      val={vcc}/2 td=46ns rise=1
++ targ v(out_f3) val={vcc}/2 td=46ns fall=1
+.measure tran atraso_00C1HL
++ trig v(C)      val={vcc}/2 td=46ns fall=1
++ targ v(out_f3) val={vcc}/2 td=46ns rise=1
+
+***01C0
+.measure tran atraso_01C0LH
++ trig v(C)      val={vcc}/2 td=49ns rise=1
++ targ v(out_f3) val={vcc}/2 td=49ns rise=1
+.measure tran atraso_01C0HL
++ trig v(C)      val={vcc}/2 td=49ns fall=1
++ targ v(out_f3) val={vcc}/2 td=49ns fall=1
+
+***01C1
+.measure tran atraso_01C1LH
++ trig v(C)      val={vcc}/2 td=52ns rise=1
++ targ v(out_f3) val={vcc}/2 td=52ns rise=1
+.measure tran atraso_01C1HL
++ trig v(C)      val={vcc}/2 td=52ns fall=1
++ targ v(out_f3) val={vcc}/2 td=52ns fall=1
+
+***10C0
+.measure tran atraso_10C0LH
++ trig v(C)      val={vcc}/2 td=55ns rise=1
++ targ v(out_f3) val={vcc}/2 td=55ns rise=1
+.measure tran atraso_10C0HL
++ trig v(C)      val={vcc}/2 td=55ns fall=1
++ targ v(out_f3) val={vcc}/2 td=55ns fall=1
+
+***10C1
+.measure tran atraso_10C1LH
++ trig v(C)      val={vcc}/2 td=58ns rise=1
++ targ v(out_f3) val={vcc}/2 td=58ns rise=1
+.measure tran atraso_10C1HL
++ trig v(C)      val={vcc}/2 td=58ns fall=1
++ targ v(out_f3) val={vcc}/2 td=58ns fall=1
+
+***11C0
+.measure tran atraso_11C0LH
++ trig v(C)      val={vcc}/2 td=61ns rise=1
++ targ v(out_f3) val={vcc}/2 td=61ns fall=1
+.measure tran atraso_11C0HL
++ trig v(C)      val={vcc}/2 td=61ns fall=1
++ targ v(out_f3) val={vcc}/2 td=61ns rise=1
+
+***111D
+.measure tran atraso_111DLH
++ trig v(D)      val={vcc}/2 td=64ns rise=1
++ targ v(out_f3) val={vcc}/2 td=64ns rise=1
+.measure tran atraso_111DHL
++ trig v(D)      val={vcc}/2 td=64ns fall=1
++ targ v(out_f3) val={vcc}/2 td=64ns fall=1
+*.measure tran transicao_A000HL
+*+ trig v(A)   val={vcc}*0.5 td=2ns fall=1
+*+ targ v(out_f3) val={vcc}*0.5 td=2ns rise=1
 
 ** CONSUMO MEDIO
-*.measure tran consumo_Medio
+.measure tran consumo_Medio AVG(i(V1)*-V(VDD)) from=0ns to=66ns
 
 ** CONSUMO ESTATICO
 *.measure tran consumo_Estatico_Arco

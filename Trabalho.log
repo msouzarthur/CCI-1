@@ -35,24 +35,66 @@ Direct Newton iteration for .op point succeeded.
 
 
 Measurement "atraso_a000lh" FAIL'ed
-transicao_a000hl=6.4e-008 FROM 2.00005e-009 TO 6.6e-008
+
+Measurement "atraso_a000hl" FAIL'ed
+
+Measurement "atraso_a001lh" FAIL'ed
+
+Measurement "atraso_a001hl" FAIL'ed
+
+Measurement "atraso_a010lh" FAIL'ed
+
+Measurement "atraso_a010hl" FAIL'ed
+
+Measurement "atraso_a011lh" FAIL'ed
+
+Measurement "atraso_a011hl" FAIL'ed
+
+Measurement "atraso_a100lh" FAIL'ed
+
+Measurement "atraso_a100hl" FAIL'ed
+
+Measurement "atraso_a101lh" FAIL'ed
+
+Measurement "atraso_a101hl" FAIL'ed
+
+Measurement "atraso_a110lh" FAIL'ed
+
+Measurement "atraso_a110hl" FAIL'ed
+
+Measurement "atraso_0b00lh" FAIL'ed
+
+Measurement "atraso_0b00hl" FAIL'ed
+
+Measurement "atraso_0b01lh" FAIL'ed
+
+Measurement "atraso_0b01hl" FAIL'ed
+
+Measurement "atraso_0b10lh" FAIL'ed
+
+Measurement "atraso_0b10hl" FAIL'ed
+
+Measurement "atraso_0b11lh" FAIL'ed
+
+Measurement "atraso_0b11hl" FAIL'ed
+consumo_medio: AVG(i(v1)*-v(vdd))=5.20639e-005 FROM 0 TO 6.6e-008
 
 
-Date: Fri Jul 28 16:54:27 2023
-Total elapsed time: 1.204 seconds.
+Date: Mon Jul 31 22:17:21 2023
+Total elapsed time: 2.861 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 7841
-traniter = 7801
-tranpoints = 2364
-accept = 2305
+totiter = 7878
+traniter = 7838
+tranpoints = 2374
+accept = 2315
 rejected = 59
 matrix size = 237
 fillins = 24
 solver = Normal
-Thread vector: 137.0/102.8[4] 29.1/18.1[4] 12.6/7.4[4] 3.0/6.0[1]  2592/500
-Matrix Compiler1: 34.44 KB object code size  19.1/9.5/[6.4]
-Matrix Compiler2: 30.32 KB object code size  8.6/10.3/[3.3]
+Thread vector: 129.9/105.2[4] 28.8/18.4[4] 11.6/4.3[4] 2.8/6.8[1]  2592/500
+Matrix Compiler1: 34.44 KB object code size  19.4/9.2/[4.9]
+Matrix Compiler2: 30.32 KB object code size  8.4/9.9/[3.0]
 
